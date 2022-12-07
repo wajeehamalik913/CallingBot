@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  meetingbot:
+    image: ${DOCKER_REGISTRY-}meetingbot
+    build:
+      context: .
+      dockerfile: MeetingBot\Dockerfile
